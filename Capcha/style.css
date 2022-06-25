@@ -1,0 +1,76 @@
+/*  */
+
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Roboto:wght@500&display=swap");
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #233142, #e3e3e3);
+}
+
+.container {
+    width: 32em;
+    background-color: #fff;
+    padding: 5em;
+    border-radius: 0.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.25);
+}
+
+.wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+canvas {
+    width: 220px;
+    height: 70px;
+    border: 1px solid #000;
+    border-radius: 0.4em;
+    margin-right: 10px;
+}
+
+button#reload-button {
+    font-size: 25px;
+    width: 100px;
+    height: 70px;
+    background-color: #455d7a;
+    border: none;
+    border-radius: 0.4em;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    font-family: "Roboto", monospace;
+    font-size: 1.05em;
+    width: 100%;
+    padding: 1em 0.7em;
+    border: 1px solid #000;
+    border-radius: 0.4em;
+    outline: none;
+}
+
+button#submit-button {
+    width: 100%;
+    background-color: #455d7a;
+    color: #fff;
+    border: none;
+    border-radius: 0.4em;
+    font-size: 1.3em;
+    margin: 1em 0 0 0;
+    padding: 0.8em 0;
+    cursor: pointer;
+    font-family: "Roboto", monospace;
+}
