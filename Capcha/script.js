@@ -25,4 +25,19 @@ const textGenerator = () => {
 const randomNumber = (min, max) =>
     Math.floor(Math.random() * (max - min + 1) + min);
 
-console.log(textGenerator());
+// console.log(textGenerator());
+
+const tiggerFunction = () => {
+    // clear Input
+    userInput.value = "";
+    text = textGenerator();
+    // console.log(text);
+    text = [...text].sort(() => Math.random() - 0.5).join("");
+    // console.log(text);
+    drawStringOnCanvas(text);
+};
+
+reloadButton.addEventListener("click", tiggerFunction);
+
+// when page reload
+window.onload = () => tiggerFunction();
